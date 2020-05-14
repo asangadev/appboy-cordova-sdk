@@ -425,4 +425,8 @@ AppboyPlugin.prototype['ContentCardTypes'] = {
 	'CAPTIONED': 'Captioned'
 };
 
+AppboyPlugin.prototype.iosShowPushPrompt = function () {
+	cordova.exec(null, null, "AppboyPlugin", "iosShowPushPrompt", []);
+}
+
 module.exports = new AppboyPlugin();
